@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report_Activity">
+
+    <TextView
+        android:id="@+id/Upload"
+        android:layout_width="283dp"
+        android:layout_height="54dp"
+        android:text="Upload Photo"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="132dp"
+        android:layout_height="49dp"
+        android:text="Camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="412dp"
+        android:layout_height="286dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.721">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/present_condition"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.019"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.051" />
+
+            <RadioGroup
+                android:id="@+id/present_conditon"
+                android:layout_width="402dp"
+                android:layout_height="33dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.97"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.081">
+
+                <RadioButton
+                    android:id="@+id/present_condition1"
+                    android:layout_width="119dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/present_condition_1"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/present_condition2"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/present_condition_2"
+                    android:textSize="12sp"
+                    tools:text="@string/present_condition_2" />
+
+                <RadioButton
+                    android:id="@+id/present_condition3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/present_condition_3"
+                    android:textSize="12sp"
+                    tools:text="@string/present_condition_3" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/remark_present_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="remarks..."
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/status_of_maintanance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_of_maintenance"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.16" />
+
+            <RadioGroup
+                android:id="@+id/status_of_maintenance"
+                android:layout_width="408dp"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.205">
+
+                <RadioButton
+                    android:id="@+id/status_of_maintanance1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_of_maintenance1"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/status_of_maintanance2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_of_maintenance2"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/status_of_maintanance3"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/status_of_maintenance3"
+                    android:textSize="12sp" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/remark_status_of_maintenance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="remarks..."
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/present_condition"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.272"
+                tools:text="@string/dry_or_wet" />
+
+            <RadioGroup
+                android:id="@+id/dry_or_wet"
+                android:layout_width="412dp"
+                android:layout_height="92dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.344">
+
+                <RadioButton
+                    android:id="@+id/dry_or_wet1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dry_or_wet1"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/dry_or_wet2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dry_or_wet2" />
+
+                <RadioButton
+                    android:id="@+id/dry_or_wet3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dry_or_wet3" />
+
+                <RadioButton
+                    android:id="@+id/dry_or_wet4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dry_or_wet4" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/remark_dry_or_wet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="remarks..."
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sewage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.438" />
+
+            <RadioGroup
+                android:id="@+id/sewage"
+                android:layout_width="407dp"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.48">
+
+                <RadioButton
+                    android:id="@+id/sewage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/sewage1" />
+
+                <RadioButton
+                    android:id="@+id/sewage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:text="@string/sewage2" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/remark_sewage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="remarks..."
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/present_condition"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.523"
+                tools:text="@string/enroachment" />
+
+            <RadioGroup
+                android:id="@+id/enroachment"
+                android:layout_width="413dp"
+                android:layout_height="147dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.659">
+                <RadioButton
+                    android:id="@+id/enroachment6"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/enroachment6" />
+                <RadioButton
+                    android:id="@+id/enroachment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/enroachment1" />
+
+                <RadioButton
+                    android:id="@+id/enroachment2"
+                    android:layout_width="423dp"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/enroachment2" />
+
+                <RadioButton
+                    android:id="@+id/enroachment5"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/enroachment5" />
+
+                <RadioButton
+                    android:id="@+id/enroachment3"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/enroachment3" />
+
+                <RadioButton
+                    android:id="@+id/enroachment4"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/enroachment4" />
+            </RadioGroup>
+            <EditText
+                android:id="@+id/remark_enroachment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="remarks..."
+                android:ems="10"
+                android:inputType="textPersonName" />
+           <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/built_up"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.742" />
+
+            <RadioGroup
+                android:id="@+id/bult_up"
+                android:layout_width="414dp"
+                android:layout_height="44dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.441"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.795">
+
+                <RadioButton
+                    android:id="@+id/built_up1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/built_up1" />
+
+                <RadioButton
+                    android:id="@+id/built_up2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:text="@string/built_up2" />
+            </RadioGroup>
+            <EditText
+                android:id="@+id/remark_built_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="remarks..."
+                android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/treacable"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.012"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.828" />
+
+            <RadioGroup
+                android:id="@+id/traceable"
+                android:layout_width="410dp"
+                android:layout_height="36dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.876">
+
+                <RadioButton
+                    android:id="@+id/traceable1"
+                    android:layout_width="208dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/treacable1" />
+
+                <RadioButton
+                    android:id="@+id/traceable2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/treacable2" />
+            </RadioGroup>
+            <EditText
+                android:id="@+id/remark_traceable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="remarks..."
+                android:inputType="textPersonName" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/Upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>

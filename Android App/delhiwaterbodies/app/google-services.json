@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "849939730688",
+    "firebase_url": "https://delhiwaterbodyreportingtool.firebaseio.com",
+    "project_id": "delhiwaterbodyreportingtool",
+    "storage_bucket": "delhiwaterbodyreportingtool.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849939730688:android:7185ba4f0cb00bbe5523e5",
+        "android_client_info": {
+          "package_name": "com.example.delhiwaterbody"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849939730688-cc0vd1afqup1euiing33nmd7ola8rstj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv1bnwSyCiNZWyrfV5npw54Fu3hK1cxIw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849939730688-cc0vd1afqup1euiing33nmd7ola8rstj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

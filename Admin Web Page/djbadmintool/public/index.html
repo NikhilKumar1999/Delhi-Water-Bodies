@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body >
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.15.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<!--<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>-->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>     
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<script>
+//    const firebase = require("firebase");
+// Required for side-effects
+//require("firebase/firestore");
+//firebase.initializeApp({
+//  apiKey:"AIzaSyBv1bnwSyCiNZWyrfV5npw54Fu3hK1cxIw",
+//  projectId: 'delhiwaterbodyreportingtool'
+//});
+
+var db = firebase.firestore();
+var storage = firebase.firestore();
+var first = false;
+db.collection("report_db").get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+    var check = doc.data();
+    print_doc(check);
+    });
+});
+db.collection("report_db").onSnapshot((querySnapshot) => {
+    if(!first)
+    {
+        first = true;
+        return;
+    }
+    doc = querySnapshot.docs[0];
+    var check = doc.data();
+    print_doc(check);
+    
+});
+
+
+function print_doc(check)
+{
+    var write_field = document.getElementById("demo");
+    write_field.innerHTML+='<div>';
+    write_field.innerHTML+="Status of Enroachment:"+check.enroachment+"<br>";
+    remark_adder(check.remark_enroachment);
+    write_field.innerHTML+="Status of Maintenance:"+check.Status_of_maintenance+"<br>";
+    remark_adder(check.remark_status_of_maintenance);
+    write_field.innerHTML+="Any buildup:"+check.buildup+"<br>";
+    remark_adder(check.remark_built_up);
+    write_field.innerHTML+="Is it dry:"+check.dry_of_wet+"<br>";
+    remark_adder(check.remark_dry_or_wet);
+    write_field.innerHTML+="Present development condition:"+check.present_condition+"<br>";
+    remark_adder(check.remark_present_condition)
+    write_field.innerHTML+="Is sewage being dumped:"+check.sewage+"<br>";
+    remark_adder(check.remark_sewage);
+    write_field.innerHTML+="Is waterbody traceable:"+check.traceable+"<br>";
+    remark_adder(check.remark_traceable);
+    write_field.innerHTML+="Id:"+check.id+"<br>";
+    write_field.innerHTML+="Village:"+check.village+"<br>";
+    write_field.innerHTML+='<img src=\"'+check.image_path+'\"/>';
+    write_field.innerHTML+="<hr></div>";
+}
+
+function remark_adder(remark)
+{
+ if(remark != "")
+ document.getElementById("demo").innerHTML+=remark+"<br>";
+}
+</script>
+<div id = "demo"></div>
+</body>
+</html>

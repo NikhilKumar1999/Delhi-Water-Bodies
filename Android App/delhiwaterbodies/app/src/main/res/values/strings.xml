@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">DelhiWaterBody</string>
+    <string name="title_activity_maps">Delhi WaterBody</string>
+    <string name="title_activity_report_">Report_Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="present_condition">What is present condition of water body?</string>
+    <string name="present_condition_1">Developed</string>
+    <string name="present_condition_2">Underdeveloped</string>
+    <string name="present_condition_3">Not Developed</string>
+    <string name="status_of_maintenance">What is the present status of maintenance of water body?</string>
+    <string name="status_of_maintenance1">Well Maintained</string>
+    <string name="status_of_maintenance2">Poorly Maintained</string>
+    <string name="status_of_maintenance3">Not Maintained</string>
+    <string name="dry_or_wet">Weather water-body is dry or wet?</string>
+    <string name="dry_or_wet1">Dry</string>
+    <string name="dry_or_wet2">Wet</string>
+    <string name="dry_or_wet3">Seasonal Dry</string>
+    <string name="dry_or_wet4">Seasonal Wet</string>
+    <string name="sewage">Weather Sewage is flown in Water Body?</string>
+    <string name="sewage1">Yes</string>
+    <string name="sewage2">No</string>
+    <string name="enroachment">Weather the water body is currently enroached?</string>
+    <string name="enroachment1">Fully Enroached</string>
+    <string name="enroachment2">Partially Enroached</string>
+    <string name="enroachment3">Partially Enroached by Temple</string>
+    <string name="enroachment4">Partially Enroached by Local People</string>
+    <string name="enroachment5">Heavily Enroached</string>
+    <string name="built_up">Weather anything has been built-up on water body?</string>
+    <string name="built_up1">Yes</string>
+    <string name="built_up2">No</string>
+    <string name="treacable">Is the water body traceable</string>
+    <string name="treacable1">Yes</string>
+    <string name="treacable2">No</string>
+    <string name="enroachment6">No Enroachment</string>
+</resources>
